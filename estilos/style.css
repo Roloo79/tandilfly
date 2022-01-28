@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Roman&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+                /* Pagina principal*/
+/* NOMBRES AREAS */
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .border{
+        border: 1px solid black;
+}
+#gridHome{
+    display: grid;
+    grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer"; 
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr 1fr 8fr 5%;  
+}
+.learHome{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    background-color: #63a4ff;
+    background-image: linear-gradient(125deg, #63a4ff 0%, #83eaf1 74%);
+}
+    .propiedadesMarca{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 120px;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 3%;
+}
+    .animate__fadeInRight{
+        padding-left: 10%;
+        font-family: 'The Nautigal', cursive;
+        font-size: 60px;
+        color: rgba(0, 0, 0, 0.623);}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #63a4ff;
+    background-image: linear-gradient(125deg, #63a4ff 0%, #83eaf1 74%); 
+}
+div a {
+    border: solid 1px rgb(0, 0, 0);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Bebas Neue';
+    font-size: 30px;  
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: violet;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+    background-color: #7ed6df;
+    background-image: linear-gradient(125deg, #7ed6df 0%, #0000006b 50%, #7ed6df 100%);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+            /*SERVICIOS*/
+.taxiAereo{
+    width: 420px;
+    height: 420px;
+}
+.vueloSanitario{
+    width: 420px;
+    height: 420px;
+}
+.vuelosPrivados{
+    width: 420px;
+    height: 420px;
+}
+.paseosTuristicos{
+    width: 420px;
+    height: 420px;
+}
+.div1 ,.div2, .div3, .div4{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.nuestrosServicios{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 50px;
+}
+main{
+    background-color: #7ed6df;
+    background-image: linear-gradient(125deg, #7ed6df 0%, #0000006b 50%, #7ed6df 100%);
+}
+
+                /*NOSOTROS*/
+.quienesSomosEstilo{
+     font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 50px;
+    }
+p{
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Luxurious Roman', cursive;
+    padding-left: 10px;
+}
+
+                /*FLOTA*/
+.MainFlota{
+    display: flex;
+}
+.nuestraFlota1{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 50px;
+}
+.fotoLear , .fotoKing{
+    width: 600px;
+}
+.sectorLear , .sectorKing{
+    display: flex;
+    margin-top: 3%;
+}
+.especificacionesLear , .especificacionesKing{
+    font-size: 50px;
+    font-family: 'The Nautigal', cursive;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.cualidades{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 50%;
+}
+                /*CONTACTO*/
+.mainContacto{
+    display: flex;
+    justify-content: space-around;
+}
+.divMapa, .contenedorIconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span a {
+    border-style: none;
+}
+.redes{
+    display: flex;
+    align-items: center;
+}
+    /*TABLET*/
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    
+        /*HOME*/
+
+    .learHome , .taxiAereo , .vuelosPrivados , .vueloSanitario , .paseosTuristicos ,  .animate__fadeInRight , .tripulacion { 
+        display: none;
+     }
+    header{
+        display: flex;
+        justify-content: center;
+        background-color: #a40606;
+        background-image: linear-gradient(125deg, #a40606 0%, #d98324 74%);
+    }
+    .navIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        align-items: stretch;
+        background-image: url(../img/avionresponsive.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    div{
+        display: flex;
+        height: 10%;
+    }
+    div a {
+        display: flex;
+        width: 20%;
+        font-size: 30px;
+        color: rgb(223, 213, 199);
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 15px;
+        border-color: rgb(223, 213, 199);
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        color: transparent;
+        background-color: #a40606;
+        background-image: linear-gradient(125deg, #a40606 0%, #d98324 74%);
+    }
+        /*SERVICIOS*/
+
+    .navServicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #a40606;
+        background-image: linear-gradient(125deg, #a40606 0%, #d98324 74%);
+    }
+    .mainServicios{
+        background-image: url(../img/avionresponsive.jpg);
+        color: rgb(223, 213, 199);
+    }
+    span{
+        margin-top: 10%;
+        font-size: 30px;
+    }
+    .nuestrosServicios{
+        margin-top: 5%;
+        font-size: 40px;
+    }
+    .divNavTablet a {
+        border-style: none;
+    }
+                /*QUIENES SOMOS*/
+    .mainNosotros{
+        background-image: url(../img/avionresponsive.jpg);
+        color: rgb(223, 213, 199);
+        height: 100vh;
+    }
+                /*FLOTA*/
+    
+
+}
+                /*SMARTPHONE*/
+@media (max-width: 480px){
+
+            /*home*/
+            .learHome , .taxiAereo , .vuelosPrivados , .vueloSanitario , .paseosTuristicos ,  .animate__fadeInRight , .tripulacion { 
+                display: none;
+             }
+    header{
+        display: flex;
+        justify-content: center;
+        background-color: #772f1a;
+        background-image: linear-gradient(125deg, #772f1a 0%, #f2a65a 74%);
+
+    }
+    .propiedadesMarca{
+        font-size: 60px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        align-items: stretch;
+        background-color: #772f1a;
+        background-image: linear-gradient(125deg, #772f1a 0%, #f2a65a 74%);
+
+        }
+    div{
+        display: flex;
+        height: 10%;
+    }
+    div a {
+        display: flex;
+        width: 60%;
+        font-size: 30px;
+        color: rgb(223, 213, 199);
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 15px;
+        border-color: rgb(223, 213, 199);
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        color: transparent;
+        background-color: #772f1a;
+        background-image: linear-gradient(125deg, #772f1a 0%, #f2a65a 74%); }
+    
+             /*servicios*/
+   .navServicios{
+       display: none;
+   }
+   .mainServicios{
+       display: flex;
+       flex-direction: column;
+       height: 100vh;
+       background-color: #772f1a;
+       background-image: linear-gradient(125deg, #772f1a 0%, #f2a65a 74%);
+   }
+   span{
+       margin-top: 15%;
+   }
+   .nuestrosServicios{
+       padding: 0%;
+       text-align: center;
+   }
+             /*nosotros*/
+    .mainNosotros{
+        height: 100vh;
+        background-color: #772f1a;
+        background-image: linear-gradient(125deg, #772f1a 0%, #f2a65a 74%);
+        padding-top: 15%;
+    }
+}
+
