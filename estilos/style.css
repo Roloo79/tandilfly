@@ -156,7 +156,6 @@ p{
 .especificacionesLear , .especificacionesKing{
     font-size: 50px;
     font-family: 'The Nautigal', cursive;
-    margin-bottom: 5%;
     text-align: center;
 }
 .cualidades{
@@ -261,7 +260,25 @@ span a {
         height: 100vh;
     }
                 /*FLOTA*/
-    
+    .fotoKing , .fotoLear {
+        width: 50%;
+        height: 50%;
+    }
+    .cualidades{
+        width: 60%;
+        height: 20%;
+    }
+    .spanFlota{
+        font-size: small;
+        height: 2%;
+        background-color: transparent;
+        margin-top: 0%;
+    }
+    .sectorKing , .sectorLear , .nuestraFlota1 , .MainFlota{
+        background-color: #a40606;
+        background-image: linear-gradient(125deg, #a40606 0%, #d98324 74%);
+        margin-top: 0%;
+    }
 
 }
                 /*SMARTPHONE*/
@@ -336,6 +353,37 @@ span a {
         background-color: #772f1a;
         background-image: linear-gradient(125deg, #772f1a 0%, #f2a65a 74%);
         padding-top: 15%;
+    }
+            /*FLOTA*/
+    body{
+        background-color: #a40606;
+        background-image: linear-gradient(125deg, #a40606 0%, #d98324 74%);
+    }
+    .fotoKing , .fotoLear {
+        width: 50%;
+        height: 50%;
+    }
+    .cualidades{
+        width: 60%;
+        height: 20%;
+    }
+    .spanFlota{
+        font-size: small;
+         height: 2%;
+        background-color: transparent;
+        margin-top: 0%;
+    }
+    .sectorKing , .sectorLear , .nuestraFlota1 , .MainFlota{
+        background-color: transparent;
+        margin-top: 0%;
+    }
+               /*CONTACTO*/ 
+    body{
+    background-color: #772f1a;
+        background-image: linear-gradient(125deg, #772f1a 0%, #f2a65a 74%);
+    }
+    .mainContacto{
+        background-color: transparent;
     }
 }
 
