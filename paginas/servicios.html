@@ -1,59 +1,91 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="../estilos/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="shortcut icon" href= "../img/icono.png">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-
 </head>
-
-<body id="gridHome">
-    <header class="border">
-        <h1 class="propiedadesMarca">Tandil Fly </h1> 
-        <h2 class="animate__animated animate__fadeInRight">El destino que desee, a su medida.</h2>
-    </header>  
-        <nav class="navServicios">
-            <div class="divNavTablet"><a href="../index.html">Home</a></div>
-            <div class="divNavTablet"><a href="servicios.html">Servicios</a></div>
-            <div class="divNavTablet"><a href="quienes-somos.html">Nosotros</a></div>
-            <div class="divNavTablet"><a href="flota.html">Flota</a></div>
-            <div class="divNavTablet"><a href="contacto.html">Contacto</a></div>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="container-fluid">
+                <h1>Tandil Fly </h1> 
+                <h2 class="animate__animated animate__fadeInRight">El destino que desee, a su medida.</h2>
+            </div>
+        </header>
+        <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="flota.html">Flota</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+          </ul>
         </nav>
-
-    <main class="mainServicios"> 
-        <h3 class="nuestrosServicios">Nuestros servicios</h3>
-            
-                <span>
-                    <div class="div1">
-                    Taxi aereo
-                    <img src="../img/taxi.jpg" class="taxiAereo">
+        <main>
+            <h3>Nuestros servicios</h3>
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                    <div class="card" style="width: 30rem;">
+                        <img src="../img/taxi.jpg" class="card-img-top" alt="taxi">
+                        <div class="card-body">
+                          <p class="card-text">TAXI AEREO</p>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 30rem;">
+                        <img src="../img/privado.jpg" class="card-img-top" alt="taxi">
+                        <div class="card-body">
+                          <p class="card-text">VUELOS PRIVADOS</p>
+                        </div>
+                  </div>
                 </div>
-                <div class="div3">
-                    Vuelos privados
-                    <img src="../img/privado.jpg" class="vuelosPrivados">
+              </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                    <div class="card" style="width: 30rem;">
+                        <img src="../img/sanitario.jpg" class="card-img-top" alt="taxi">
+                        <div class="card-body">
+                          <p class="card-text">VUELOS SANITARIOS</p>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 30rem;">
+                        <img src="../img/turistico.jpg" class="card-img-top" alt="taxi">
+                        <div class="card-body">
+                          <p class="card-text">PASEOS TURISTICOS</p>
+                        </div>
+                  </div>
                 </div>
-                </span>
-                <span>
-                <div class="div2">
-                    Vuelos sanitarios
-                    <img src="../img/sanitario.jpg" class="vueloSanitario">
-                </div>    
-                <div class="div4">
-                    Paseos turisticos
-                    <img src="../img/turistico.jpg" class="paseosTuristicos">
-                </div>
-                </span>
-            
-    </main>
-        <hr>
-
-    <footer class="border">Copyright 2022</footer>
-    
+              </div>
+            </div>
+          </main>
+    </div> 
+    <footer>
+      <div class="container-fluid">
+          <h4>COPYRIGHT 2022</h4> 
+      </div>
+  </footer>   
 </body>
-
 </html>
