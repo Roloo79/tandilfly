@@ -81,10 +81,14 @@ body {
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
+  height: 100vh;
   text-align: var(--bs-body-text-align);
   background-image: linear-gradient(125deg, #63a4ff 0%, #83eaf1 74%);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.tripulacion{
+  width: 100%;
 }
 
 hr {
@@ -104,7 +108,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-}
+  }
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
@@ -112,7 +116,7 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 120px;
+    font-size: 80px;
   }
 }
 
@@ -122,7 +126,7 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 60px;
+    font-size: 30px;
   }
 }
 
@@ -5974,9 +5978,11 @@ textarea.form-control-lg {
   padding: 1rem 1rem;
   color: #212529;
 }
-
 .carousel {
   position: relative;
+}
+#carouselExampleControls{
+  width: 80%;
 }
 
 .carousel.pointer-event {
@@ -5985,8 +5991,8 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
   overflow: hidden;
+  align-self:center;
 }
 .carousel-inner::after {
   display: block;
@@ -6707,6 +6713,7 @@ textarea.form-control-lg {
 
 .d-block {
   display: block !important;
+  height: 80vh;
 }
 
 .d-grid {
