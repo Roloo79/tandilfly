@@ -87,9 +87,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.tripulacion{
-  width: 100%;
-}
 
 hr {
   margin: 1rem 0;
@@ -115,6 +112,9 @@ h1, .h1 {
   font-family: 'Bebas Neue', cursive;
 }
 @media (min-width: 1200px) {
+  .mb-3{
+    display: none;
+  }
   h1, .h1 {
     font-size: 80px;
   }
@@ -657,6 +657,9 @@ progress {
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
+  }
+  .mb-3{
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -2135,7 +2138,7 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
-@media (max-width: 767.98px) {
+ (max-width: 767.98px) {
   .table-responsive-md {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -4601,7 +4604,7 @@ textarea.form-control-lg {
 .card-img-top,
 .card-img-bottom {
   width: 100%;
-  height: 300px;
+ height: 100%;
 }
 
 .card-img,
@@ -6713,9 +6716,7 @@ textarea.form-control-lg {
 
 .d-block {
   display: block !important;
-  height: 80vh;
 }
-
 .d-grid {
   display: grid !important;
 }

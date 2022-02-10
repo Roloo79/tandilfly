@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Roman&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+/* VARIABLES */
+
+$colorHover:rgb(226, 151, 66);
+
+
+h2{
+    padding-left: 5%;
+}
+h3{
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: underline;
+    padding-left: 3%;
+}
+h4{
+    font-size: small;
+}
+p{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Luxurious Roman', cursive;
+    padding-left: 3%;
+}
+    ul{
+        li{
+            background-color:transparent;
+            &:hover{
+                background-color: $colorHover;
+            }
+
+        }
+    }
+.card-body{
+    p{
+        &:hover{
+            font-style: italic;
+            font-size: 30px;
+            color:$colorHover;
+        }
+    }
+}
+footer{
+    margin-top: 5%;
+    height: 2%;
+    background-color: transparent;
+}
+.col-lg-5{
+    margin-bottom: 5%;
+}
+.row{
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+nav{
+    background-color: transparent;
+}
+.nav-link{ 
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(43, 36, 49);
+    margin-right: 5%;
+}
+body{
+    background-color: #0cbaba;
+    background-image: linear-gradient(090deg, #0cbaba 0%, #084d68 74%);
+
+}
+.d-block{
+    border-radius: 2%;
+}

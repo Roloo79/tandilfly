@@ -5,7 +5,7 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="scss/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,24 +19,33 @@
             <h2 class="animate__animated animate__fadeInRight">El destino que desee, a su medida.</h2>
         </div>
     </header>
-    <nav>
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="paginas/servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="paginas/quienes-somos.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="paginas/flota.html">Flota</a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link" href="paginas/contacto.html">Contacto</a>
-          </li>
-      </ul>
+    <hr>
+    <!--MENU HAMBURGUESA-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../paginas/servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../paginas/quienes-somos.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../paginas/flota.html">FLOTA</a>
+            </li><li class="nav-item">
+              <a class="nav-link active" href="../paginas/contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <main class="row justify-content-center">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -61,6 +70,7 @@
           </div>
     </main>
     </div>
+    <hr>
     <footer>
         <div class="container-fluid">
             <h4>COPYRIGHT 2022</h4> 
