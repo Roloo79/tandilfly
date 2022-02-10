@@ -112,9 +112,7 @@ h1, .h1 {
   font-family: 'Bebas Neue', cursive;
 }
 @media (min-width: 1200px) {
-  .mb-3{
-    display: none;
-  }
+  
   h1, .h1 {
     font-size: 80px;
   }
@@ -657,9 +655,6 @@ progress {
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
-  }
-  .mb-3{
-    display: none;
   }
 }
 @media (min-width: 1200px) {
